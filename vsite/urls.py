@@ -21,5 +21,6 @@ from vulnerabilities.views import sql_injection, xss
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('sql/', sql_injection),
-    path('xss/', xss)
+    path('xss/', xss),
+    path('', xss)
 ]
